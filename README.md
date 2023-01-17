@@ -73,8 +73,8 @@ $ cd ~/ros_ws/src
 $ git clone {Download_link}
 ```
 - Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros)
-- Download_link : [Obj_detect_3d_ros](https://github.com/soslab-solution/obj_detect_3d_ros)
-- Download_link : [ML](https://github.com/soslab-solution/mlx_ros_driver)
+- Server_download_link : [Server](https://github.com/soslab-solution/obj_detect_3d_ros)
+- MLX_download_link : [ML](https://github.com/soslab-solution/mlx_ros_driver)
 
 ### Configuration 
 ```
