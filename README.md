@@ -80,6 +80,7 @@ $ git clone {Download_link}
 ```
 ros_ws/
   |--build/
+  |
   |--devel/
   |
   |--src/
