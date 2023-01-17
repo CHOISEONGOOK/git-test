@@ -133,7 +133,7 @@ ros_ws/
     ```
 
 ### Server Run
-1. run Object_Detect
+1. run Server
     ```bash
     $ roslaunch obj_detect_3d_ros web_obj_detect_3d_ros.launch
     ```
