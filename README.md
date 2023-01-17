@@ -132,7 +132,7 @@ ros_ws/
     $ roslaunch ml ml.launch
     ```
 
-### Object_Detect Run
+### Server Run
 1. run Object_Detect
     ```bash
     $ roslaunch obj_detect_3d_ros web_obj_detect_3d_ros.launch
@@ -140,7 +140,7 @@ ros_ws/
 
 ### Client Run
 
-1. run react app (viewer)
+1. run App (viewer)
     ```bash
     $ cd {app_dir}
     $ serve -s build
