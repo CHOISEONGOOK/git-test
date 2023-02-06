@@ -114,7 +114,7 @@ ros_ws/
 
 1. install rosbridge package
     ```bash
-    sudo apt-get install ros-melodic-rosbridge-suite
+    sudo apt-get install ros-noetic-rosbridge-suite
     cm
     ```
 
