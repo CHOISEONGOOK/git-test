@@ -49,7 +49,7 @@
 2. System 환경 설정
 	```bash
 	echo "source ~/ros_ws/devel/setup.bash" >> ~/.bashrc
-	echo "export ROS_HOSTNAME=localhos" >> ~/.bashrc
+	echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 	echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 	echo "alias cs='cd ~/ros_ws/src'" >> ~/.bashrc
 	echo "alias cw='cd ~/ros_ws'" >> ~/.bashrc
@@ -104,7 +104,7 @@ ros_ws/
 2.  Install react app
 	> Install npm packages
 	```bash
-	cd {app_dir}
+	cd ~/ros_ws/src/webviewer-ros/
 	npm install
 	npm run build
 	sudo npm install -g serve
@@ -142,7 +142,7 @@ ros_ws/
 
 1. run App (viewer)
     ```bash
-    cd {app_dir}
+    cd ~/ros_ws/src/webviewer-ros/
     serve -s build
     ```
     - chrome localhost:3000 접속
