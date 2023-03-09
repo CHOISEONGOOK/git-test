@@ -146,3 +146,9 @@ ros_ws/
     serve -s build
     ```
     - chrome localhost:3000 접속
+
+
+## Advantech setup
+
+1. c++ version update (ver. 9.4)
+
