@@ -44,13 +44,13 @@
 
 4. 데스크탑 풀버전을 설치합니다.
 	```bash
-	sudo apt install ros-noetic-desktop-full
+	sudo apt install ros-melodic-desktop-full
 	```
 
 5.  Shell에서 실행할 수 있도록 환경설정을 합니다.
 	>_[bash]_
 	```bash
-	echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+	echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 	source ~/.bashrc
 	```
 
@@ -135,7 +135,7 @@ ros_ws/
 
 1. install rosbridge package
     ```bash
-    sudo apt-get install ros-noetic-rosbridge-suite
+    sudo apt-get install ros-melodic-rosbridge-suite
     cm
     ```
 
