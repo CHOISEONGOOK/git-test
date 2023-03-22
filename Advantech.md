@@ -1,8 +1,29 @@
 # Perception
 
+## Advantech setup
+
+1. c++ version update (ver. 9.4)
+    ```bash
+    sudo apt update
+    sudo apt install gcc-9
+    gcc --version
+    ```
+    
+2. cmake version update (ver. 3.16.3)
+    ```bash
+    wget https://cmake.org/files/v3.16/cmake-3.16.3.tar.gz
+    $ tar -xvzf cmake-3.16.3.tar.gz
+    cd cmake-3.16.3
+    ./bootstrap --prefix=/usr/local
+    make
+    make install
+    cmake --version
+    ```
+ 
+
 ## ROS install
 
->These instructions will install **ROS Noetic**, which is available for Ubuntu Focal (20.04)
+>These instructions will install **ROS melodic**, which is available for Ubuntu Bionic (18.04)
 
 ### ROS noetic install
 1. 설치 패키지 목록에 ROS를 추가합니다.
@@ -147,23 +168,3 @@ ros_ws/
     ```
     - chrome localhost:3000 접속
 
-
-## Advantech setup
-
-1. cmake version update (ver. 3.16.3)
-    ```bash
-    wget https://cmake.org/files/v3.16/cmake-3.16.3.tar.gz
-    $ tar -xvzf cmake-3.16.3.tar.gz
-    cd cmake-3.16.3
-    ./bootstrap --prefix=/usr/local
-    make
-    make install
-    cmake --version
-    ```
-    
-2. c++ version update (ver. 9.4)
-    ```bash
-    sudo apt update
-    sudo apt install gcc-9
-    gcc --version
-    ```
