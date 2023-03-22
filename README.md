@@ -147,23 +147,3 @@ ros_ws/
     ```
     - chrome localhost:3000 접속
 
-
-## Advantech setup
-
-1. cmake version update (ver. 3.16.3)
-    ```bash
-    wget https://cmake.org/files/v3.16/cmake-3.16.3.tar.gz
-    $ tar -xvzf cmake-3.16.3.tar.gz
-    cd cmake-3.16.3
-    ./bootstrap --prefix=/usr/local
-    make
-    make install
-    cmake --version
-    ```
-    
-2. c++ version update (ver. 9.4)
-    ```bash
-    sudo apt update
-    sudo apt install gcc-9
-    gcc --version
-    ```
