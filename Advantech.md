@@ -9,7 +9,7 @@
     sudo apt install gcc-9 g++-9
     gcc --version
     ```
-1.1 dpkg error
+> dpkg error
 
     ```bash
     sudo su
