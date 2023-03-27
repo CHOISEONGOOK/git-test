@@ -9,7 +9,7 @@
     sudo apt install gcc-9 g++-9
     gcc --version
     ```
-> dpkg error<
+1.1 dpkg error
     ```bash
     sudo su
     rm /var/lib/dpkg/info/format
