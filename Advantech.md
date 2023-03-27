@@ -3,9 +3,12 @@
 ## Advantech setup
 
 1. c++ version update (ver. 9.4)
+>user unlock
     ```bash
     sudo apt update
-    sudo apt install gcc-9
+    sudo apt install software-properties-common
+    sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+    sudo apt install gcc-9 g++-9
     gcc --version
     ```
     
