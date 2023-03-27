@@ -3,19 +3,26 @@
 ## Advantech setup
 
 1. c++ version update (ver. 9.4)
->user unlock
     ```bash
+    sudo apt install build-essential
     sudo apt update
-    sudo apt install software-properties-common
-    sudo add-apt-repository ppa:ubuntu-toolchain-r/test
     sudo apt install gcc-9 g++-9
     gcc --version
+    ```
+> dpkg error
+    ```bash
+    sudo su
+    rm /var/lib/dpkg/info/format
+    echo "1.0" > /var/lib/dpkg/info/format
+    dpkg --configure -a
+    apt-get update
+    apt-get upgrade
     ```
     
 2. cmake version update (ver. 3.16.3)
     ```bash
     wget https://cmake.org/files/v3.16/cmake-3.16.3.tar.gz
-    $ tar -xvzf cmake-3.16.3.tar.gz
+    tar -xvzf cmake-3.16.3.tar.gz
     cd cmake-3.16.3
     ./bootstrap --prefix=/usr/local
     make
