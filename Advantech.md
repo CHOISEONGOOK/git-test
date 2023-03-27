@@ -69,12 +69,12 @@
 	
 2. System 환경 설정
 	```bash
-	echo "source ~/ros_ws/devel/setup.bash" >> ~/.bashrc
+	echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 	echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 	echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
-	echo "alias cs='cd ~/ros_ws/src'" >> ~/.bashrc
-	echo "alias cw='cd ~/ros_ws'" >> ~/.bashrc
-	echo "alias cm='cd ~/ros_ws && catkin_make'" >> ~/.bashrc
+	echo "alias cs='cd ~/catkin_ws/src'" >> ~/.bashrc
+	echo "alias cw='cd ~/catkin_ws'" >> ~/.bashrc
+	echo "alias cm='cd ~/catkin_ws && catkin_make'" >> ~/.bashrc
 	
 	source ~/.bashrc
 	```
