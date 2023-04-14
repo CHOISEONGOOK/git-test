@@ -75,8 +75,8 @@
 ### ROS noetic setup
 1. Workspace 생성
 	```bash
-	mkdir -p ~/ros_ws/src
-	cd ~/ros_ws/
+	mkdir -p ~/catkin_ws/src
+	cd ~/catkin_ws/
 	catkin_make
 	```
 	
@@ -127,7 +127,7 @@
 ### Download link
 >Git clone repository
 ```bash
-cd ~/ros_ws/src
+cd ~/catkin_ws/src
 git clone {Download_link}
 ```
 - Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros.git)
@@ -137,7 +137,7 @@ git clone {Download_link}
 
 ### Configuration 
 ```
-ros_ws/
+catkin_ws/
   |--build/
   |
   |--devel/
@@ -164,7 +164,7 @@ ros_ws/
 2.  Install react app
 	> Install npm packages
 	```bash
-	cd ~/ros_ws/src/webviewer-ros/
+	cd ~/catkin_ws/src/webviewer-ros/
 	npm install
 	npm run build
 	sudo npm install -g serve
@@ -182,13 +182,13 @@ ros_ws/
 
 1. build Perception_API
     ```bash
-    cd ~/ros_ws/src/Perception_API/
+    cd ~/catkin_ws/src/Perception_API/
     sh ./build.sh
     ```
 
 2. copy to Perception_ROS
     ```bash
-    sudo cp ~/ros_ws/src/Perception_API/
+    sudo cp -f ~/catkin_ws/src/Perception_API/bin/include/* ~/catkin_ws/src/Perception_ROS/include/perception_lib/
     ```
 
 ## Perception Run
@@ -215,7 +215,7 @@ ros_ws/
 
 1. run App (viewer)
     ```bash
-    cd ~/ros_ws/src/webviewer-ros/
+    cd ~/catkin_ws/src/webviewer-ros/
     serve -s build
     ```
     - chrome localhost:3000 접속
