@@ -186,9 +186,9 @@ catkin_ws/
     sh ./build.sh
     ```
 
-2. copy to Perception_ROS
+2. so file copy to Perception_ROS
     ```bash
-    sudo cp -f ~/catkin_ws/src/Perception_API/bin/include/* ~/catkin_ws/src/Perception_ROS/include/perception_lib/
+    cp -f ~/catkin_ws/src/Perception_API/bin/include/* ~/catkin_ws/src/Perception_ROS/include/perception_lib/
     ```
 
 ## Perception Run
