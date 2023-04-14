@@ -96,9 +96,10 @@
 cd ~/ros_ws/src
 git clone {Download_link}
 ```
-- Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros)
-- Server_download_link : [Server](https://github.com/soslab-solution/obj_detect_3d_ros)
-- MLX_download_link : [ML](https://github.com/soslab-solution/mlx_ros_driver)
+- Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros.git)
+- Perception_ROS_download_link : [ROS](https://github.com/soslab-solution/Perception_ROS.git)
+- Perception_API_download_link : [API](https://github.com/soslab-solution/Perception_API.git)
+- MLX_download_link : [MLX](https://github.com/soslab-solution/mlx_ros_driver.git)
 
 ### Configuration 
 ```
@@ -108,8 +109,9 @@ ros_ws/
   |--devel/
   |
   |--src/
-     |--ml/
-     |--obj_detect_3d_ros/
+     |--mlx_ros_driver/
+     |--Perception_ROS/
+     |--Perception_API/
      |--webviewer-ros/
  ```
 
