@@ -143,6 +143,19 @@ ros_ws/
     sudo apt-get install ros-noetic-rosbridge-suite
     cm
     ```
+    
+### Perception_API build
+
+1. build Perception_API
+    ```bash
+    cd ~/ros_ws/src/Perception_API/
+    sh ./build.sh
+    ```
+
+2. so file copy to Perception_ROS
+    ```bash
+    cp -f ~/ros_ws/src/Perception_API/bin/include/* ~/ros_ws/src/Perception_ROS/include/perception_lib/
+    ```
 
 ## Perception Run
 
