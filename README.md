@@ -57,6 +57,30 @@
 	
 	source ~/.bashrc
 	```
+	
+### Install dependencies
+1. pcl
+	```bash
+	sudo apt-get install libpcl-dev
+	```
+2. boost
+	```bash
+	sudo apt-get install libboost-all-dev
+	```
+3. eigen
+	```bash
+	sudo apt-get install libeigen3-dev
+	```
+4. jsoncpp
+	```bash
+	sudo apt-get install libjsoncpp-dev
+	```
+5. pybind11
+	```bash
+	pip install pybind11
+	pip install "pybind11[global]"
+	```
+
 
 ## S/W Download link
 
