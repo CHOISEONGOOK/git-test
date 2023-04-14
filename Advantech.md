@@ -92,6 +92,30 @@
 	source ~/.bashrc
 	```
 
+### Install dependencies
+1. pcl
+	```bash
+	sudo apt-get install libpcl-dev
+	```
+2. boost
+	```bash
+	sudo apt-get install libboost-all-dev
+	```
+3. eigen
+	```bash
+	sudo apt-get install libeigen3-dev
+	```
+4. jsoncpp
+	```bash
+	sudo apt-get install libjsoncpp-dev
+	```
+5. pybind11
+	```bash
+	pip install pybind11
+	pip install "pybind11[global]"
+	```
+
+
 ## S/W Download link
 
 ### Git install
@@ -106,9 +130,10 @@
 cd ~/ros_ws/src
 git clone {Download_link}
 ```
-- Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros)
-- Server_download_link : [Server](https://github.com/soslab-solution/obj_detect_3d_ros)
-- MLX_download_link : [ML](https://github.com/soslab-solution/mlx_ros_driver)
+- Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros.git)
+- Perception_ROS_download_link : [ROS](https://github.com/soslab-solution/Perception_ROS.git)
+- Perception_API_download_link : [API](https://github.com/soslab-solution/Perception_API.git)
+- MLX_download_link : [MLX](https://github.com/soslab-solution/mlx_ros_driver.git)
 
 ### Configuration 
 ```
@@ -118,8 +143,9 @@ ros_ws/
   |--devel/
   |
   |--src/
-     |--ml/
-     |--obj_detect_3d_ros/
+     |--mlx_ros_driver/
+     |--Perception_ROS/
+     |--Perception_API/
      |--webviewer-ros/
  ```
 
@@ -150,6 +176,19 @@ ros_ws/
     ```bash
     sudo apt-get install ros-melodic-rosbridge-suite
     cm
+    ```
+
+### Perception_API build
+
+1. build Perception_API
+    ```bash
+    cd ~/ros_ws/src/Perception_API/
+    sh ./build.sh
+    ```
+
+2. copy to Perception_ROS
+    ```bash
+    sudo cp ~/ros_ws/src/Perception_API/
     ```
 
 ## Perception Run
