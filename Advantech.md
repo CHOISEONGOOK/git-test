@@ -33,7 +33,16 @@
     cmake --version
     ```
  
-
+3. boost version update (ver. 1.71.0)
+    ```bash
+    wget https://boostorg.jfrog.io/artifactory/main/release/1.71.0/source/boost_1_71_0.tar.gz
+    tar xvfz boost_1_71_0.tar.gz
+    cd boost_1_71_0
+    sudo ./bootstrap.sh
+    sudo ./b2 install
+    ```
+    
+    
 ## ROS install
 
 >These instructions will install **ROS melodic**, which is available for Ubuntu Bionic (18.04)
@@ -97,19 +106,15 @@
 	```bash
 	sudo apt-get install libpcl-dev
 	```
-2. boost
-	```bash
-	sudo apt-get install libboost-all-dev
-	```
-3. eigen
+2. eigen
 	```bash
 	sudo apt-get install libeigen3-dev
 	```
-4. jsoncpp
+3. jsoncpp
 	```bash
 	sudo apt-get install libjsoncpp-dev
 	```
-5. pybind11
+4. pybind11
 	```bash
 	pip install pybind11
 	pip install "pybind11[global]"
