@@ -186,3 +186,18 @@ ros_ws/
     ```
     - chrome localhost:3000 접속
 
+## Remove Source Code
+
+### Remove Perception_API
+
+1. Remove Perception_API
+    ```bash
+    rm -rf ~/ros_ws/src/Perception_API
+    ```
+    
+### Remove Webviewer src
+
+1. Remove Webviewer src
+    ```bash
+    rm -rf ~/ros_ws/src/webviewer-ros/src
+    ```
