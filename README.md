@@ -72,10 +72,19 @@
 cd ~/ros_ws/src
 git clone {Download_link}
 ```
-- Perception_Viewer_download_link : [Webviewer](https://github.com/SOSLAB-github/Perception_Viewer.git)
-- Perception_Engine_Safety_download_link : [ROS](https://github.com/SOSLAB-github/Perception_Engine_Safety.git)
-- Perception_API_Safety_download_link : [API](https://github.com/SOSLAB-github/Perception_API_Safety.git)
-- MLX_download_link : [MLX](https://github.com/SOSLAB-github/Mlx_Ros_Driver.git)
+- Perception_Viewer_download_link : [Perception_Viewer](https://github.com/SOSLAB-github/Perception_Viewer.git)
+- Perception_Engine_Safety_download_link : [Perception_Engine](https://github.com/SOSLAB-github/Perception_Engine_Safety.git)
+- Perception_API_Safety_download_link : [Perception_API](https://github.com/SOSLAB-github/Perception_API_Safety.git)
+- Mlx_Ros_Driver_download_link : [Mlx_Ros](https://github.com/SOSLAB-github/Mlx_Ros_Driver.git)
+
+
+### ML-X SDK Download link
+>Git clone repository
+```bash
+cd ~/Documents
+git clone {Download_link}
+```
+- Mlx_SDK_download_link : [Mlx_SDK](https://github.com/SOSLAB-github/ML-X_SDK.git)
 
 ### Configuration 
 ```
@@ -106,7 +115,7 @@ ros_ws/
 2.  Install react app
 	> Install npm packages
 	```bash
-	cd ~/ros_ws/src/webviewer-ros/
+	cd ~/ros_ws/src/Perception_Viewer/
 	npm install
 	npm run build
 	sudo npm install -g serve
@@ -119,18 +128,22 @@ ros_ws/
     sudo apt-get install ros-noetic-rosbridge-suite
     cm
     ```
-    
+
+## ML / Perception API Build
+
+### ML-X SDK build
+
 ### Perception_API build
 
 1. build Perception_API
     ```bash
-    cd ~/ros_ws/src/Perception_API/
+    cd ~/ros_ws/src/Perception_API_Safety/
     sh ./build.sh
     ```
 
 2. so file copy to Perception_ROS
     ```bash
-    cp -f ~/ros_ws/src/Perception_API/bin/include/* ~/ros_ws/src/Perception_ROS/include/perception_lib/
+    cp -f ~/ros_ws/src/Perception_API_Safety/bin/include/* ~/ros_ws/src/Perception_Engine_Safety/include/perception_lib/
     ```
 
 ## Perception Run
@@ -157,7 +170,7 @@ ros_ws/
 
 1. run App (viewer)
     ```bash
-    cd ~/ros_ws/src/webviewer-ros/
+    cd ~/ros_ws/src/Perception_Viewer/
     serve -s build
     ```
     - chrome localhost:3000 접속
@@ -168,12 +181,12 @@ ros_ws/
 
 1. Remove Perception_API
     ```bash
-    rm -rf ~/ros_ws/src/Perception_API
+    rm -rf ~/ros_ws/src/Perception_API_Safety
     ```
     
 ### Remove Webviewer src
 
 1. Remove Webviewer src
     ```bash
-    rm -rf ~/ros_ws/src/webviewer-ros/src
+    rm -rf ~/ros_ws/src/Perception_Viewer/src
     ```
