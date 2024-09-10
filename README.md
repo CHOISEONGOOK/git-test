@@ -58,30 +58,6 @@
 	source ~/.bashrc
 	```
 	
-### Install dependencies
-1. pcl
-	```bash
-	sudo apt-get install libpcl-dev
-	```
-2. boost
-	```bash
-	sudo apt-get install libboost-all-dev
-	```
-3. eigen
-	```bash
-	sudo apt-get install libeigen3-dev
-	```
-4. jsoncpp
-	```bash
-	sudo apt-get install libjsoncpp-dev
-	```
-5. pybind11
-	```bash
-	pip install pybind11
-	pip install "pybind11[global]"
-	```
-
-
 ## S/W Download link
 
 ### Git install
@@ -96,10 +72,10 @@
 cd ~/ros_ws/src
 git clone {Download_link}
 ```
-- Webviewer_download_link : [Webviewer](https://github.com/soslab-solution/webviewer-ros.git)
-- Perception_ROS_download_link : [ROS](https://github.com/soslab-solution/Perception_ROS.git)
-- Perception_API_download_link : [API](https://github.com/soslab-solution/Perception_API.git)
-- MLX_download_link : [MLX](https://github.com/soslab-solution/mlx_ros_driver.git)
+- Perception_Viewer_download_link : [Webviewer](https://github.com/SOSLAB-github/Perception_Viewer.git)
+- Perception_Engine_Safety_download_link : [ROS](https://github.com/SOSLAB-github/Perception_Engine_Safety.git)
+- Perception_API_Safety_download_link : [API](https://github.com/SOSLAB-github/Perception_API_Safety.git)
+- MLX_download_link : [MLX](git@github.com:SOSLAB-github/Mlx_Ros_Driver.git)
 
 ### Configuration 
 ```
@@ -109,10 +85,10 @@ ros_ws/
   |--devel/
   |
   |--src/
-     |--mlx_ros_driver/
-     |--Perception_ROS/
-     |--Perception_API/
-     |--webviewer-ros/
+     |--Mlx_Ros_Driver/
+     |--Perception_Engine_Safety/
+     |--Perception_API_Safety/
+     |--Perception_Viewer/
  ```
 
 
