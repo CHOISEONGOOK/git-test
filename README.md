@@ -75,7 +75,7 @@ git clone {Download_link}
 - Perception_Viewer_download_link : [Webviewer](https://github.com/SOSLAB-github/Perception_Viewer.git)
 - Perception_Engine_Safety_download_link : [ROS](https://github.com/SOSLAB-github/Perception_Engine_Safety.git)
 - Perception_API_Safety_download_link : [API](https://github.com/SOSLAB-github/Perception_API_Safety.git)
-- MLX_download_link : [MLX](git@github.com:SOSLAB-github/Mlx_Ros_Driver.git)
+- MLX_download_link : [MLX](https://github.com/SOSLAB-github/Mlx_Ros_Driver.git)
 
 ### Configuration 
 ```
